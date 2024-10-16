@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@font-face {
+    font-family: 'manga';
+    src: url(font/mangat.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive; 
+    --font3: 'manga', cursive
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px ;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgrey;
+    font-family: var(--font1);
+}
+
+header{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    
+}
+
+header > h1{
+    font-variant:small-caps ;
+    font-size:4em;
+    font-family: var(--font2);
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 2.5vw ;
+}
+
+section > p {
+    padding-bottom: 2em;
+    line-height: 3
+}
+
+section.normal{
+    background-color: white;
+    
+}
+
+section.img{
+    background-color: rgb(50, 50, 50);
+    color:  white;
+    box-shadow: inset 6px 6px 6px rgba(0, 0, 0, 0.53);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section.img > p{
+    background-color: rgba(0, 0, 0, 0.503);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.552);
+}
+
+section#img01{
+    background-image: url(img/novo.jpg);
+    background-position: center center;
+}
+
+
+section#img02{
+    background-image: url(img/1371020.png);
+    background-position: center center; 
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer ,a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
